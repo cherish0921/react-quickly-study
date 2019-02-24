@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>创建组件类</title>
+</head>
+<body>
+    <div id="content"></div>
+    <script src="../../lib/react.development.js"></script>
+    <script src="../../lib/react-dom.development.js"></script>
+    <script>
+        const h1 = React.createElement('h1', null ,'Hello World!');
+        // TODO: 定义HelloWorld React组件类
+        class HelloWorld extends React.Component {
+            // TODO: 创建render方法作为表单式(返回一个单一的元素)
+            render(){
+                // TODO: 调用render()时，返回React元素
+                return React.createElement('div', null, h1, h1);
+            }
+        }
+        ReactDOM.render(
+            // TODO: 第一个参数传递对象
+            React.createElement(HelloWorld, null),
+            document.getElementById('content')
+        );
+    </script>
+</body>
+</html>
