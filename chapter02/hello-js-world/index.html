@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>props属性</title>
+</head>
+<body>
+    <div id="content"></div>
+    <script src="../../lib/react.development.js"></script>
+    <script src="../../lib/react-dom.development.js"></script>
+    <script>
+        class HelloWorld extends React.Component {
+            render(){
+                // TODO: 通过this.props读取createElement 传递的第二个参数options
+                return React.createElement('h1', this.props, `Hello ${this.props.title} World!`);
+            }
+        }
+        ReactDOM.render(
+            React.createElement(
+                'div', null, 
+                React.createElement(HelloWorld, {id: 'vue', title: 'vue.js', 'data-frameworkName': 'vue.js from chain'}), 
+                React.createElement(HelloWorld, {id: 'react', title: 'react.js', 'data-frameworkName': 'react.js from Facebook'}),
+                React.createElement(HelloWorld, {id: 'angular', title: 'angular.js', 'data-frameworkName': 'angular.js from google'})
+            ),
+            document.getElementById('content')
+        );
+    </script>
+</body>
+</html>
