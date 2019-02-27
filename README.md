@@ -10,3 +10,4 @@
         * hellow-world-class(page: 27) 创建和渲染一个React组件类
         * hello-js-world(page:32) props属性   
     * chapter03 JSX 
+        * hello-jsx-world(page:40-46) 在组件中使用JSX
