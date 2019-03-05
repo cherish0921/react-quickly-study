@@ -1,9 +1,15 @@
 import React, { Component } from 'react';
 
 class AnalogDisplay extends Component {
+    constructor(props){
+        super(props);
+        this.state = {date: this.props.time};
+    }
     render() {
         return (
-            <div>{this.props.time}</div>
+            <div style={this.state.dialStyle}>
+                <div>{this.state.date}</div>
+            </div>
         );
     }
 }

@@ -13,4 +13,6 @@
         * hello-jsx-world(page:40-46) 在组件中使用JSX
     * chapter04 与状态交互
         * clock 有状态组件的时钟
-        * clock-analog-digital 
+        * clock-analog-digital page:73-77
+    * chapter05 React组件声明周期
+        

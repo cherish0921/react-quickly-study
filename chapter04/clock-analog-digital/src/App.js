@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import AnalogDisplay from './analog-display';
+import DigitalDisplay from "./digital-display";
 
 class App extends Component {
     constructor(props){
@@ -10,6 +11,7 @@ class App extends Component {
         return (
             <div>
                 <AnalogDisplay time={this.state.currentTime}></AnalogDisplay>
+                <DigitalDisplay time={this.state.currentTime}></DigitalDisplay>
             </div>
         );
     }
